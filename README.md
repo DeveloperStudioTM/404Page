@@ -1,1 +1,2 @@
-# 404Page
+# 404 Page
+A page there server not found
