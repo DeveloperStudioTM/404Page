@@ -1,7 +1,7 @@
 <?php 
 
 //404page.php
-error_reporting(false);
+error_reporting(0);
 
 $error = $_SERVER["REDIRECT_STATUS"];
 
