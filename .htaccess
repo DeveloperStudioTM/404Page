@@ -1,0 +1,17 @@
+RewriteEngine on
+
+RewriteRule ^404page$ 404Page.php [L]
+RewriteRule ^index$ index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(^\.]+)$ $1.php [NC,L]
+
+#404 Fehler
+#400 Ungültig
+#403 Verboten
+#500 Server Fehler
+ErrorDocument 404 /404Page.php
+ErrorDocument 403 /404Page.php
+ErrorDocument 400 /404Page.php
+#ErrorDucument 500 /GameArchiveAPI/404Page.php
